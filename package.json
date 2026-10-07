@@ -1,0 +1,25 @@
+{
+  "name": "@godman-protocols/wisdom",
+  "version": "0.1.0",
+  "description": "WISDOM: Witnessed Independent Signed Decision On Merit. An open, signed record that proves agent work was reviewed independently before it was released.",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "src", "README.md", "CHANGELOG.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build && npm test",
+    "test": "npx tsx smoke.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["agent", "protocol", "review", "ed25519", "provenance", "governance", "godman-protocols", "multi-agent", "ai-safety"],
+  "author": "SkinGem",
+  "license": "Apache-2.0",
+  "publishConfig": { "access": "public", "registry": "https://registry.npmjs.org/" },
+  "repository": { "type": "git", "url": "https://github.com/Godman-s/wisdom.git" },
+  "engines": { "node": ">=20.0.0" },
+  "devDependencies": { "@types/node": "^20.11.0", "tsx": "^4.7.0", "typescript": "^5.4.0" },
+  "homepage": "https://github.com/Godman-s/wisdom#readme",
+  "bugs": { "url": "https://github.com/Godman-s/wisdom/issues" }
+}
